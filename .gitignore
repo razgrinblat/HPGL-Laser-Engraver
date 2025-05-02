@@ -1,0 +1,4 @@
+.venv
+*.hpgl
+.idea
+hpgl_files
