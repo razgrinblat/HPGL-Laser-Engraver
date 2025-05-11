@@ -7,10 +7,10 @@ from PyQt6.QtWidgets import (
     QFileDialog, QComboBox, QSlider, QMessageBox, QGroupBox,
     QGridLayout, QProgressBar, QHBoxLayout
 )
-from arduino_controller import ArduinoController
-from hpgl_parser import HPGLParser
-from hpgl_preview import HPGLPreview
-from job_thread import JobThread
+from GUI.arduino_controller import ArduinoController
+from GUI.hpgl_parser import HPGLParser
+from GUI.hpgl_preview import HPGLPreview
+from GUI.job_thread import JobThread
 
 
 class MainWindow(QMainWindow):
