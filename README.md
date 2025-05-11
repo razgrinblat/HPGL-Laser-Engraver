@@ -20,15 +20,15 @@ This project is a laser engraving system powered by an Arduino UNO R3 with a CNC
 
 **Controller Interface:**
 
-![Controller GUI](./assets/controller.png)
+<img alt="Controller GUI" height="400" src="./assets/controller.png" width="500"/>
 
 **Laser Engraving in Progress:**
 
-![Laser Engraving](./assets/laser_engraving.jpg)
+<img alt="Laser Engraving" height="400" src="./assets/laser_engraving.jpg" width="300"/>
 
 **Machine Assembly:**
 
-![Engraver Frame](./assets/engraver_frame.jpeg)
+<img alt="Engraver Frame" height="400" src="./assets/engraver_frame.jpg" width="400"/>
 
 ## Construction Guide
 
