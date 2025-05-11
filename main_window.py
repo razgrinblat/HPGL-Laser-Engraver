@@ -246,11 +246,6 @@ class MainWindow(QMainWindow):
             QMessageBox.warning(self, "Error", "No valid commands to execute")
             return
 
-        # Set initial laser power
-        power = self.laser_power_slider.value()
-        self.arduino.send_command(f"SP:{power}")
-        self.arduino.wait_for_response()
-
         # Create and start job thread
         self.job_thread = JobThread(self.arduino, commands)
         self.job_thread.progress_update.connect(self.update_progress)
@@ -278,6 +273,8 @@ class MainWindow(QMainWindow):
             self.status_label.setText("Job resumed")
         else:
             # Pause
+            self.arduino.send_command("PU")
+            self.arduino.wait_for_response()
             print("[GUI] Pausing job")
             self.job_thread.pause()
             self.pause_button.setText("Resume")
